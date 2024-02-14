@@ -16,18 +16,18 @@
     <main
         class="bg-[url('/images/background.png')] bg-center min-h-screen flex flex-col items-center justify-center bg-no-repeat ">
         <!-- Alphabet Clash Section start -->
-        <section class="home  text-white">
+        <section id="home-screen" class=" text-white">
             <div class="flex flex-col gap-10 items-center">
                 <h1 class="uppercase text-9xl text-white font-anton font-bold">Alphabet Clash</h1>
                 <h4 class="text-white text-2xl font-anton">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</h4>
-                <button class="btn text-white px-6 py-4">Play Now</button>
+                <button onclick="play()" class="btn text-black bg-slate-100 px-6 py-4">Play Now</button>
             </div>
         </section>
         <!-- Alphabet Clash Section end -->
 
         <!-- playground section start -->
 
-        <section class="playGround hidden">
+        <section id="playground-section" class="playGround hidden">
             <!-- screen -->
             <div
                 class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
@@ -35,9 +35,9 @@
                 <div class="flex justify-center ">
                     <p class="bg-[#2F2941] px-6 pb-4 rounded-xl text-white">Don't Watch Keyboard While Playing</p>
                 </div>
-               <div class="flex justify-center items-center h-full">
-                <p class="text-9xl font-bold text-black">Y</p>
-               </div>
+                <div class="flex justify-center items-center h-full">
+                    <p class="text-9xl font-bold text-black">Y</p>
+                </div>
             </div>
 
             <!-- keyboard -->
@@ -99,7 +99,7 @@
 
         <!-- final score start -->
 
-        <section class="score flex justify-center items-center h-full hidden">
+        <section class="hidden score flex justify-center items-center h-full ">
             <div class="text-white text-center space-y-8 bg-[#FFFFFF33] rounded-xl p-4">
                 <h1 class="text-8xl font-bold">Score: <span>14</span></h1>
                 <button class="btn text-white px-6 py-4">Play Again</button>
@@ -111,6 +111,7 @@
     </main>
 
     <script src="script/alpha-clash.js"></script>
+    <script src="script/utility.js"></script>
 </body>
 
 </html>
